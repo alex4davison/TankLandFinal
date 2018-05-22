@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct RadarResult {
+    var objectLocation: Position
+    var objectID: String
+    var objectEnergy: Int
+    init (resultLocation: Position, resultID: String, resultEnergy: Int) {
+        self.resultLocation = resultLocation
+        self.resultID = resultID
+        self.resultEnergy = resultEnergy
+    }
+}
+
