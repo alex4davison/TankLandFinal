@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Position {
+    var x: Int
+    var y: Int
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
+    var coordinates: String {
+        return("(\(x), \(y))")
+    }
+}
